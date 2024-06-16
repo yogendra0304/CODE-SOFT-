@@ -1,0 +1,37 @@
+#include <iostream >
+#include<cmath>
+using namespace std;
+
+class simplecalculator{
+int a,b;
+public: 
+void getDatasimple (){
+    cout <<"enter the value of a"<<endl;
+    cin>> a;
+
+    cout <<"enter the value of b"<<endl;
+    cin >>b;
+}
+void performOperatorSimple(){
+cout<<"The value of a + b is "<< a + b<<endl;
+cout<<"The value of a - b is "<< a - b<<endl;
+cout<<"The value of a * b is "<< a * b<<endl;
+cout<<"The value of a / b is "<< a / b<<endl;
+}
+
+};
+ 
+class advancecalculator : public simplecalculator{
+
+};
+
+
+int main() {
+advancecalculator  calc;
+
+calc.getDatasimple();
+calc.performOperatorSimple();
+
+
+return 0;
+}
